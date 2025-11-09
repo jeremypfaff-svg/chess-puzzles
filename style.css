@@ -1,0 +1,34 @@
+h1 {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+   }
+
+   .navButton {
+     background-color:rgb(29, 155, 240);
+    border: none; 
+    color: white;
+    font-size: 15;
+    font-weight:bold;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: box-shadow 0.2s, opacity 0.1s;
+       }
+    .navButton:hover {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);  }
+    .navButton:active {opacity: 0.5;}
+  
+  #puzzleFrame {
+  width: 100%;
+  height: 450px; /* You can change this number */
+  padding-top: 40px;
+  border: none; /* 'frameborder="0"' is old, 'border: none;' is modern CSS */
+}
