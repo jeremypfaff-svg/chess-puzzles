@@ -1,14 +1,49 @@
+.mascott-thumb {
+height: 150px;
+display:inline-block;
+}
+
+.titleBlock {
+   display:inline-block;
+ }
+.v-aligned {
+  vertical-align: middle;
+}
 h1 {
   color: blue;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 36px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  font-family: roboto;
+  font-size: 48px;
+  /*padding-top: 2px;
+  padding-bottom: 2px;
   padding-left: 20px;
+  margin-bottom: 10px;
+  text-align: center;*/
    }
+h2 {
+  font-family: roboto;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+.TBThinking {
+  height: 140px;
+  display:inline-block;
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-   .navButton {
-     background-color:rgb(29, 155, 240);
+.navButton {
+    background-color:rgb(29, 155, 240);
     border: none; 
     color: white;
     font-size: 15;
@@ -22,14 +57,16 @@ h1 {
     cursor: pointer;
     transition: box-shadow 0.2s, opacity 0.1s;
        }
-    .navButton:hover {
+.navButton:hover {
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);  }
-    .navButton:active {opacity: 0.5;}
-  
-  #puzzleFrame {
+.navButton:active {opacity: 0.5;}
+.NavBar {
+  margin-top: 5px;
+} 
+ #puzzleFrame {
   width: 100%;
-  height: 480px; 
+  height: 480px; /* You can change this number */
   padding-top: 40px;
-  border: none; 
+  border: none; /* 'frameborder="0"' is old, 'border: none;' is modern CSS */
 }
 
