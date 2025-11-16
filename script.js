@@ -39,6 +39,7 @@ let currentIndex = 0;
 // --- 3. Connecting to Your HTML ---
 // We grab the elements from your HTML so we can control them with JS.
 // We use 'getElementById' to find them by the 'id' you gave them.
+const puzzleTitle = document.getElementById("puzzle-title")
 const prevButton = document.getElementById("prevButton");
 const nextButton = document.getElementById("nextButton");
 const puzzleFrame = document.getElementById("puzzleFrame");
@@ -52,6 +53,11 @@ function showPuzzle() {
   
   // Set the 'src' attribute of the iframe to the new puzzle URL
   puzzleFrame.src = baseUrl + currentPuzzleId;
+
+  // Calculate the human-friendly puzzle number (1 instead of 0)
+  const puzzleNumber = currentIndex + 1; 
+  const totalPuzzles = puzzleIds.length;
+  puzzleTitle.textContent = "Puzzle " + puzzleNumber + " of " + totalPuzzles;
 }
 
 
@@ -88,3 +94,6 @@ prevButton.addEventListener("click", () => {
   // Call our function to update the iframe
   showPuzzle();
 });
+// This runs the function once when the page loads
+// to set the title and first puzzle.
+showPuzzle();
