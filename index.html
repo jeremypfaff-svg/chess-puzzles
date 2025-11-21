@@ -1,42 +1,37 @@
-<DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Naahii Ridge Chess Club Puzzles</title>
-      <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Naahii Ridge Chess Club Puzzles</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
-    
-    
-    <body>
-<!-- Heading -->
-<div class="title-container">
-<img src="Naahii_Chess.png" alt="an image of a thunderbird attacking a chess board" class="mascott-thumb v-aligned">
-<div class="titleBlock v-aligned">
- <h1>Naahii Ridge Chess Club Puzzles</h1>
- <h2 id = "puzzle-title"></h2>
-  </div> 
-<img src="Thunderbird_Thinking.jpg" alt="an image of a thunderbird thinking while looking over a chess board" class="TBThinking v-aligned">
-</div>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="title-container">
+      <img src="Naahii_Chess.png" alt="an image of a thunderbird attacking a chess board" class="mascott-thumb v-aligned">
+      <div class="titleBlock v-aligned">
+         <h1>Naahii Ridge Chess Club Puzzles</h1>
+         <h2 id="puzzle-title">Loading...</h2>
+      </div> 
+      <img src="Thunderbird_Thinking.jpg" alt="an image of a thunderbird thinking while looking over a chess board" class="TBThinking v-aligned">
+    </div>
 
+    <div class="category-menu">
+       <button class="category-btn" onclick="switchCategory('mateInOne')">Mate in One</button>
+       <button class="category-btn" onclick="switchCategory('mateInTwo')">Mate in Two</button>
+    </div>
 
-  <!-- Navigation buttons -->
-<div class="NavBar">
-  <button id="prevButton" class="navButton">Previous</button>
-  <button id="nextButton" class="navButton">Next</button> 
-</div>
+    <div class="NavBar">
+      <button id="prevButton" class="navButton">Previous</button>
+      <button id="nextButton" class="navButton">Next</button> 
+    </div>
 
+    <iframe id="puzzleFrame" src=""></iframe>
+     
+    <script src="script.js"></script>
 
-    <!--  Embedded chess puzzle  -->
- <iframe id="puzzleFrame" 
-        src="https://www.chess.com/emboard?id=14096307">
-</iframe>
- 
-<script src="script.js"></script>
-
-     </body>
-  </html>
-
-</DOCTYPE>
+  </body>
+</html>
